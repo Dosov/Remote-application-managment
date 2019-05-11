@@ -55,7 +55,7 @@ public class MouseActivity extends AppCompatActivity {
                 byte[] msgBuffer = code.getBytes();
                 MainActivity.thisDevices.write(msgBuffer);
             }
-        })
+        });
         next = (Button) findViewById(R.id.buttonPlayerPlay);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,7 +74,6 @@ public class MouseActivity extends AppCompatActivity {
                 MainActivity.thisDevices.write(msgBuffer);
             }
         });
-
 
     }
 }

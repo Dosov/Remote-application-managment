@@ -19,8 +19,14 @@ public class ActivityAim extends AppCompatActivity implements View.OnTouchListen
     String sUp;
     Button buttonLeftClick,buttonWheelUp,buttonWheelDown,buttonRightClick;
 
+
     public View.OnClickListener listenerMouseRightClick,listenerMouseLeftClick,listenerWheelUp,
             listenerWheelDown,listenerMyComp,listenerJoystick,listenerNoGba,listenerAimp;
+
+    /**Создание ActivityAimp
+     *
+     * @param savedInstanceState состояние Activity
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +84,12 @@ public class ActivityAim extends AppCompatActivity implements View.OnTouchListen
         tv.setOnTouchListener(this);
     }
 
+    /**Управление кнопками
+     *
+     * @param v обьект
+     * @param event движение по кординате
+     * @return
+     */
     @Override
     public boolean onTouch(View v, MotionEvent event) {
 
