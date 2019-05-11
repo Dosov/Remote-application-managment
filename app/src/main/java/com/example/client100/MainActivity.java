@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     static public  ConnectThread thisDevices;
 
+    /** Проверка поддержки  bluetooth
+     *
+     * @param savedInstanceState состояние bluttooth
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,6 +96,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
        });
     }
 
+    /** Нажатие на кнопки
+     *
+     * @param v нажатие обьекта
+     */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -114,7 +122,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
+    /** Проверка на исключения
+     *
+     */
     public class ConnectThread extends Thread
     {
         private BluetoothSocket mmSocket = null;
@@ -215,6 +225,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    /**Поиск устройств bluetooth
+     *
+     * @param view обект
+     */
     public void discoverDevices(View view) {
 
         discoveredDevices.clear();

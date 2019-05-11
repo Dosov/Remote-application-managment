@@ -13,7 +13,7 @@ public class MouseActivity extends AppCompatActivity {
 
     /**Создание Activity
      *
-     * @param savedInstanceState оостояние Activity
+     * @param savedInstanceState ооcтояние Activity
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
