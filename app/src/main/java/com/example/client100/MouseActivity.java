@@ -10,6 +10,11 @@ import android.widget.TextView;
 public class MouseActivity extends AppCompatActivity {
     String code = "first";
     Button prevTrack, nextTrack, pause, play,next,prev;
+
+    /**Создание Activity
+     *
+     * @param savedInstanceState оостояние Activity
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
