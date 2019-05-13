@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fon2"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -20,16 +21,12 @@
         android:layout_below="@+id/viewTouchpad">
 
         <Button
-            android:id="@+id/buttonLeftClick"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="0.40"
-            android:background="@color/colorPrimaryDark"
             android:text="Left Click"
-            android:textColor="@android:color/holo_red_dark"
-            android:textColorLink="@android:color/holo_red_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:background="@color/mycolor"
+            android:id="@+id/buttonLeftClick"
+            android:layout_weight="0.40" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -40,41 +37,41 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/mycolor"
                 android:text="Up"
-
                 android:id="@+id/buttonWheelUp"
                 android:layout_weight="0.50" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/mycolor"
                 android:text="Down"
                 android:id="@+id/buttonWheelDown"
                 android:layout_weight="0.50" />
         </LinearLayout>
 
         <Button
-            android:id="@+id/buttonRightClick"
             android:layout_width="wrap_content"
+            android:background="@color/mycolor"
             android:layout_height="match_parent"
-            android:layout_weight="0.40"
-            android:background="@color/colorPrimaryDark"
             android:text="Right Click"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:id="@+id/buttonRightClick"
+            android:layout_weight="0.40" />
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="600dp"
         android:id="@+id/viewTouchpad"
-        android:background="@drawable/touch"
-        android:layout_alignParentLeft="true"
+        android:layout_width="391dp"
+        android:layout_height="510dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/touch"/>
 </RelativeLayout>
 
 
